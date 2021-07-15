@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #ff7a7a url("../images/bg-intro-desktop.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+
+    .left {
+        color: white;
+        padding: 1em 4em 1em 1em;
+        width: 40vw;
+
+        h1 {
+            margin-bottom: .5em;
+            font-size: 2.6em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+    }
+
+    .right {
+        
+        text-align: center;
+        
+        .free-btn {
+            background: #6055a5;
+            color: white;
+            text-align: center;
+            border-radius: .8em;
+            padding: 20px 5px;
+            font-weight: bold;
+            margin-bottom: 2em;
+            font-size: .9em;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+
+            &:hover {
+                cursor: pointer;
+                background: #423988;
+                transition: 200ms;
+            }
+
+            span {
+                color: #b9b6d3;
+                font-weight: lighter;
+            }
+        }
+
+        .form {
+            background: white;
+            padding: 2em;
+            border-radius: .8em;
+            
+            form {
+
+                input {
+                    display: block;
+                    width: 100%;
+                    padding: 1rem;
+                    margin-bottom: 25px;
+                    outline: none;
+                    border: 2px solid rgba(128, 128, 128, 0.329);
+                    border-radius: .5em;
+                    font-weight: bold;
+
+                    &:focus {
+                        border: 2px solid gray;
+                        transition: 200px;
+                    }
+
+                    &[id="password"] {
+                        margin-bottom: 2.2em;
+                    }
+                }
+
+                .input-box {
+                    position: relative;
+                }
+
+                .error-icon {
+                    position: absolute;
+                    top: 15px;
+                    right: 25px;
+                    visibility: hidden;
+                }
+
+                .erro {
+                    border: 2px solid rgba(255, 0, 0, 0.445);
+
+                    &::placeholder {
+                        color: rgba(255, 0, 0, 0.445);
+                    }
+
+                    & + .error-icon {
+                        visibility: visible;
+                    }
+                }
+
+                .submit-btn {
+                    background: #38cc8c;
+                    color: white;
+                    padding: 1em 10px;
+                    border-radius: .5em;
+                    margin-bottom: 10px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+                    
+                    &:hover {
+                        cursor: pointer;
+                        background: #24bb79;
+                        transition: 200ms;
+                    }
+                }
+
+                .form-bottom {
+                    font-weight: lighter;
+                    color: #b9b6d3;
+                    font-size: .8em;
+                    padding: 0 2em;
+
+                    span {
+                        color: #ff7a7a;
+                    }
+                }    
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px)  {
+    body {
+        display: block;
+        background: #ff7a7a url("../images/bg-intro-mobile.png");
+  
+        .left {
+            padding: 1em;
+            width: unset;
+            margin-bottom: 1em;
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+        }
+
+        .right {
+            .form {         
+                form {
+                    input {
+                        padding: 1em 0.8em;
+                    }
+
+                    .error-icon {
+                        top: 13px;
+                        right: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

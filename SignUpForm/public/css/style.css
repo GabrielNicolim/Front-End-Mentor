@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background: #ff7a7a url("../images/bg-intro-desktop.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+body .left {
+  color: white;
+  padding: 1em 4em 1em 1em;
+  width: 40vw;
+}
+
+body .left h1 {
+  margin-bottom: .5em;
+  font-size: 2.6em;
+  font-weight: bold;
+}
+
+body .left p {
+  font-size: 1.2em;
+}
+
+body .right {
+  text-align: center;
+}
+
+body .right .free-btn {
+  background: #6055a5;
+  color: white;
+  text-align: center;
+  border-radius: .8em;
+  padding: 20px 5px;
+  font-weight: bold;
+  margin-bottom: 2em;
+  font-size: .9em;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+}
+
+body .right .free-btn:hover {
+  cursor: pointer;
+  background: #423988;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+body .right .free-btn span {
+  color: #b9b6d3;
+  font-weight: lighter;
+}
+
+body .right .form {
+  background: white;
+  padding: 2em;
+  border-radius: .8em;
+}
+
+body .right .form form input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 25px;
+  outline: none;
+  border: 2px solid rgba(128, 128, 128, 0.329);
+  border-radius: .5em;
+  font-weight: bold;
+}
+
+body .right .form form input:focus {
+  border: 2px solid gray;
+  -webkit-transition: 200px;
+  transition: 200px;
+}
+
+body .right .form form input[id="password"] {
+  margin-bottom: 2.2em;
+}
+
+body .right .form form .input-box {
+  position: relative;
+}
+
+body .right .form form .error-icon {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  visibility: hidden;
+}
+
+body .right .form form .erro {
+  border: 2px solid rgba(255, 0, 0, 0.445);
+}
+
+body .right .form form .erro::-webkit-input-placeholder {
+  color: rgba(255, 0, 0, 0.445);
+}
+
+body .right .form form .erro:-ms-input-placeholder {
+  color: rgba(255, 0, 0, 0.445);
+}
+
+body .right .form form .erro::-ms-input-placeholder {
+  color: rgba(255, 0, 0, 0.445);
+}
+
+body .right .form form .erro::placeholder {
+  color: rgba(255, 0, 0, 0.445);
+}
+
+body .right .form form .erro + .error-icon {
+  visibility: visible;
+}
+
+body .right .form form .submit-btn {
+  background: #38cc8c;
+  color: white;
+  padding: 1em 10px;
+  border-radius: .5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.247);
+}
+
+body .right .form form .submit-btn:hover {
+  cursor: pointer;
+  background: #24bb79;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+body .right .form form .form-bottom {
+  font-weight: lighter;
+  color: #b9b6d3;
+  font-size: .8em;
+  padding: 0 2em;
+}
+
+body .right .form form .form-bottom span {
+  color: #ff7a7a;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: block;
+    background: #ff7a7a url("../images/bg-intro-mobile.png");
+  }
+  body .left {
+    padding: 1em;
+    width: unset;
+    margin-bottom: 1em;
+  }
+  body .left h1 {
+    font-size: 2em;
+  }
+  body .left p {
+    font-size: 1.1em;
+  }
+  body .right .form form input {
+    padding: 1em 0.8em;
+  }
+  body .right .form form .error-icon {
+    top: 13px;
+    right: 8px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
