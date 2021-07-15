@@ -1,9 +1,9 @@
 # ResponsiveCard
 
-## About 
+## About
 
-Minha solução para o desafio [Stats preview card component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62), retirado do site [FrontEnd Mentor](https://www.frontendmentor.io/solutions). 
+My solution to the [Stats preview card component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62) challenge, taken from [FrontEnd Mentor](https://www.frontendmentor) .io/solutions).
 
-## View 
+## View
 
-Para vizualizar o projeto abra o arquivo `index.html` em seu navegador ou clique neste [link](https://gabrielnicolim.github.io/ResponsiveCard/)
+To view the project open the `index.html` file in your browser or click on this [link](https://gabrielnicolim.github.io/Front-End-Mentor/ResponsiveCard/)

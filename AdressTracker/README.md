@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [AdressTracker](https://gabrielnicolim.github.io/AdressTracker/)
+- Solution URL: [AdressTracker](https://gabrielnicolim.github.io/Front-End-Mentor/AdressTracker/)
 
 ## My process
 ### Built with
