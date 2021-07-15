@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body .hero {
+  background: url("../images/desktop/image-header.jpg") center no-repeat;
+  background-size: cover;
+  height: 90vh;
+}
+
+body .hero header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 3em;
+}
+
+body .hero header .left img {
+  width: 150px;
+}
+
+body .hero header a {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  padding: 15px 25px;
+  font-size: .9em;
+}
+
+body .hero header .contact {
+  font-family: 'Fraunces', serif;
+  color: #23303e;
+  background: white;
+  border-radius: 8em;
+  text-transform: uppercase;
+}
+
+body .hero header .contact:hover {
+  background: rgba(255, 255, 255, 0.288);
+  color: white;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+body .hero header #hamburguer,
+body .hero header #responsive-menu,
+body .hero header #triangle {
+  display: none;
+}
+
+body .hero .hero-text {
+  color: white;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 3em;
+  padding: 1.5em 0;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+body .hero .arrow {
+  text-align: center;
+}
+
+body .hero .arrow img {
+  height: 90px;
+}
+
+body .containers .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .containers .container .left,
+body .containers .container .right {
+  width: 50vw;
+  height: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .containers .container .content {
+  width: 70%;
+}
+
+body .containers .container .content h2 {
+  font-family: 'Fraunces', serif;
+  color: #23303e;
+  font-size: 3.2vw;
+  margin-bottom: .5em;
+  font-weight: 900;
+}
+
+body .containers .container .content p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 3vw;
+  color: #818498;
+  text-align: justify;
+  font-size: 1.4vw;
+  margin-bottom: 2em;
+}
+
+body .containers .container .content a {
+  font-family: 'Fraunces', serif;
+  color: #23303e;
+  position: relative;
+  font-size: 1.4vw;
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+body .containers .container .content a::after {
+  content: '';
+  height: .6vw;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 1.2vw;
+  border-radius: 16px;
+  z-index: -10;
+  opacity: 40%;
+}
+
+body .containers .container .content a:hover:after {
+  opacity: 80%;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+body .containers .container #transform .content a::after {
+  background: #fad400;
+}
+
+body .containers .container #egg {
+  background: url("../images/desktop/image-transform.jpg") center;
+  background-size: cover;
+}
+
+body .containers .container #stand-out {
+  background: url("../images/desktop/image-stand-out.jpg") center;
+  background-size: cover;
+}
+
+body .containers .container #stand .content a::after {
+  background: #fe7867;
+}
+
+body .fruits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .fruits .left,
+body .fruits .right {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 5vw;
+}
+
+body .fruits .left .content,
+body .fruits .right .content {
+  width: 60%;
+  text-align: center;
+}
+
+body .fruits .left .content h2,
+body .fruits .right .content h2 {
+  font-size: 2.4vw;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 1em;
+}
+
+body .fruits .left .content p,
+body .fruits .right .content p {
+  font-size: 1.4vw;
+  font-family: 'Barlow', sans-serif;
+  line-height: 2vw;
+}
+
+body .fruits #graphic {
+  background: url("../images/desktop/image-graphic-design.jpg") center;
+  background-size: cover;
+}
+
+body .fruits #graphic h2, body .fruits #graphic p {
+  color: #25564b;
+}
+
+body .fruits #photography {
+  background: url("../images/desktop/image-photography.jpg") center;
+  background-size: cover;
+}
+
+body .fruits #photography h2, body .fruits #photography p {
+  color: #19536b;
+}
+
+body .client {
+  text-align: center;
+}
+
+body .client h2 {
+  font-size: 1.6em;
+  margin: 4em 0 2em 0;
+  color: #a7abae;
+  font-family: 'Fraunces', serif;
+  letter-spacing: .2vw;
+}
+
+body .client .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 4vw;
+}
+
+body .client .clients .box {
+  width: 30vw;
+  padding: 2vw;
+}
+
+body .client .clients .box img {
+  border-radius: 8em;
+  width: 5vw;
+  margin-bottom: 2em;
+}
+
+body .client .clients .box p {
+  color: #818498;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.4vw;
+  margin-bottom: 3em;
+}
+
+body .client .clients .box .name {
+  color: #23303e;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 1em;
+  font-size: 1.4vw;
+  font-weight: 900;
+}
+
+body .client .clients .box .office {
+  color: #a7abae;
+  font-family: 'Barlow', sans-serif;
+  font-size: .9vw;
+}
+
+body .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .gallery img {
+  width: 25vw;
+}
+
+body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #90d4c5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4vw;
+}
+
+body footer a {
+  color: #458c7e;
+  font-family: 'Barlow', sans-serif;
+}
+
+body footer a:hover {
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  color: white;
+}
+
+body footer path {
+  fill: #458c7e;
+}
+
+body footer .logo {
+  margin: 2vw 0;
+}
+
+body footer .menu,
+body footer .social {
+  margin-bottom: 5vw;
+}
+
+body footer .menu a:not(:last-child),
+body footer .social a:not(:last-child) {
+  margin-right: 2vw;
+}
+
+body footer .attribution {
+  font-family: 'Barlow', sans-serif;
+}
+
+@media screen and (max-width: 705px) {
+  body .hero {
+    height: 60vh;
+    background: url("../images/mobile/image-header.jpg") cover;
+  }
+  body .hero header {
+    padding: 1em 1.5em;
+    position: relative;
+  }
+  body .hero header #no-responsive-menu {
+    display: none;
+  }
+  body .hero header #hamburguer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  body .hero header #triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid white;
+    border-left: 50px solid transparent;
+    position: absolute;
+    right: 25px;
+    top: 4em;
+  }
+  body .hero header #responsive-menu {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 85%;
+    padding: 10px;
+    top: 6em;
+    right: 25px;
+    padding: 2em 4em;
+  }
+  body .hero header #responsive-menu a {
+    color: #5a636c;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4vw;
+    margin-bottom: 1em;
+  }
+  body .hero header #responsive-menu a.contact {
+    background: yellow;
+    color: #23303e;
+    font-weight: 900;
+  }
+  body .hero .hero-text {
+    font-size: 2em;
+    padding: 1em;
+  }
+  body .containers .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .containers .container:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .containers .container .left,
+  body .containers .container .right {
+    width: 100vw;
+    height: 100vw;
+  }
+  body .containers .container .content {
+    width: 90%;
+    text-align: center;
+  }
+  body .containers .container .content h2 {
+    font-size: 8vw;
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+  body .containers .container .content p {
+    line-height: 7vw;
+    font-size: 5vw;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  body .containers .container .content a {
+    font-size: 4vw;
+  }
+  body .containers .container .content a::after {
+    height: 2vw;
+    top: 3vw;
+    left: 0;
+  }
+  body .containers .container #egg {
+    background: url("../images/mobile/image-transform.jpg") center;
+    background-size: cover;
+  }
+  body .containers .container #stand-out {
+    background: url("../images/mobile/image-stand-out.jpg") center;
+    background-size: cover;
+  }
+  body .fruits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .fruits .left,
+  body .fruits .right {
+    width: 100vw;
+    height: 140vw;
+    padding-bottom: 10vw;
+  }
+  body .fruits .left .content,
+  body .fruits .right .content {
+    width: 90%;
+  }
+  body .fruits .left .content h2,
+  body .fruits .right .content h2 {
+    font-size: 6vw;
+  }
+  body .fruits .left .content p,
+  body .fruits .right .content p {
+    font-size: 4vw;
+    line-height: 6vw;
+    padding: 0 .5em;
+  }
+  body .fruits #graphic {
+    background: url("../images/mobile/image-graphic-design.jpg") center;
+    background-size: cover;
+  }
+  body .fruits #photography {
+    background: url("../images/mobile/image-photography.jpg") top;
+    background-size: cover;
+  }
+  body .client {
+    text-align: center;
+  }
+  body .client h2 {
+    font-size: 1.2em;
+    margin: 2em 0;
+    color: #a7abae;
+    font-family: 'Fraunces', serif;
+    letter-spacing: .2vw;
+  }
+  body .client .clients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 4vw;
+  }
+  body .client .clients .box {
+    width: 100vw;
+    padding: 2vw;
+    margin-bottom: 2em;
+  }
+  body .client .clients .box img {
+    border-radius: 8em;
+    width: 20vw;
+    margin-bottom: 2em;
+  }
+  body .client .clients .box p {
+    font-size: 5vw;
+    margin-bottom: 1em;
+    padding: 0 .4em;
+  }
+  body .client .clients .box .name {
+    margin-bottom: 1em;
+    font-size: 5vw;
+  }
+  body .client .clients .box .office {
+    font-size: 3vw;
+  }
+  body .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .gallery img {
+    width: 50vw;
+  }
+  body .gallery #milk {
+    content: url("../images/mobile/image-gallery-milkbottles.jpg");
+  }
+  body .gallery #orange {
+    content: url("../images/mobile/image-gallery-orange.jpg");
+  }
+  body .gallery #cone {
+    content: url("../images/mobile/image-gallery-cone.jpg");
+  }
+  body .gallery #sugar {
+    content: url("../images/mobile/image-gallery-sugar-cubes.jpg");
+  }
+  body footer {
+    padding: 2em;
+  }
+  body footer .logo {
+    margin: 1em 0;
+  }
+  body footer .menu,
+  body footer .social {
+    margin-bottom: 4em;
+  }
+  body footer .menu a:not(:last-child),
+  body footer .social a:not(:last-child) {
+    margin-right: 10vw;
+  }
+  body footer .attribution {
+    font-family: 'Barlow', sans-serif;
+    text-align: center;
+    font-size: .8em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

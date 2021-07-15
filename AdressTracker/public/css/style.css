@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/pattern-bg.png") no-repeat;
+  background-size: cover;
+  padding: 1em;
+}
+
+.top h1 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.top .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3em;
+}
+
+.top .form input {
+  outline: none;
+  width: 40vw;
+  font-size: 18px;
+  height: 8vh;
+  padding: 0 1em;
+  border-radius: 1em 0 0 1em;
+  border: none;
+  color: #2b2b2b;
+}
+
+.top .form input::-webkit-input-placeholder {
+  color: #969696;
+}
+
+.top .form input:-ms-input-placeholder {
+  color: #969696;
+}
+
+.top .form input::-ms-input-placeholder {
+  color: #969696;
+}
+
+.top .form input::placeholder {
+  color: #969696;
+}
+
+.top .form .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+  border-radius: 0 1em 1em 0;
+  cursor: pointer;
+  height: 8vh;
+  width: 8vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 2px 2px 10px #969696;
+          box-shadow: 2px 2px 10px #969696;
+  margin-bottom: -5em;
+  z-index: 999;
+}
+
+.card div {
+  width: 20vw;
+  padding: 1em;
+}
+
+.card div .text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .8em;
+  letter-spacing: 2px;
+  color: #969696;
+}
+
+.card div p {
+  color: #2b2b2b;
+  font-weight: 500;
+  margin-top: .5em;
+  font-size: 1.8vw;
+  padding-right: 2em;
+}
+
+#map {
+  width: 100vw;
+  height: 100vw;
+  min-height: 1800px;
+}
+
+#map .leaflet-control-zoom-in,
+#map .leaflet-control-zoom-out {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 999;
+  background: url("../images/pattern-bg.png") no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  width: 100vw;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: #bbbbbb;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+@media screen and (max-width: 885px) {
+  .top {
+    padding: 2em;
+  }
+  .top .form {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  .top .form input {
+    width: 100%;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin-bottom: -8em;
+  }
+  .card div {
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+  }
+  .card div p {
+    color: #2b2b2b;
+    font-weight: 500;
+    margin-top: .5em;
+    font-size: 1.5em;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

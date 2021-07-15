@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+:root {
+    /* Primary */
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --dark-desaturated-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+@keyframes move{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2vh);
+    }
+    100%{
+        transform: translateY(0);
+    }    
+}
+
+@keyframes broken {
+    0% {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+
+    5% {
+        transform: rotate(2deg);
+    }
+
+    15% {
+        transform: rotate(-2deg);
+    }
+
+    20% {
+        transform: rotate(2deg);
+    }
+
+    25% {
+        transform: rotate(-2deg);
+    }
+
+    50% {
+        transform: rotate(2deg);
+    }
+
+    70% {
+        transform: translate3d(0, 200px,0);
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate3d(0,-200px,0);
+    }
+}
+
+.broken {
+    animation: broken 4s;
+    opacity: 0;
+}
+
+.now {
+    color: var(--soft-red);
+    background: var(--dark-desaturated-blue);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-top: 40vh;
+}
+
+.none {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background: url("../images/bg-stars.svg") var(--very-dark-blue);
+}
+
+.hills {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    z-index: -1;
+    background: url("../images/pattern-hills.svg") right;
+    background-size: cover;
+}
+
+h1 {
+    color: var(--white);
+    margin: 10vh 0;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h1 div {
+    display: flex;
+}
+
+h1 div span {
+    animation: move 2.5s ease-in-out infinite;
+}
+
+h1 div {
+    margin-bottom: 15px;
+}
+
+h1 div:not(:last-child) {
+    margin-right: 10px;
+}
+
+h1 div span:not(:last-child) {
+    margin-right: 3px;
+}
+
+.container {
+    display: flex;
+}
+
+.container .box {
+    text-align: center;
+}
+
+.container .box:not(:last-child) {
+    margin-right: 4vw;
+}
+
+.container .box .timer {
+    background: var(--dark-desaturated-blue);
+    color: var(--soft-red);
+    font-size: 6vw;
+    position: relative;
+    border-radius: 1vw;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box .timer::before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: var(--very-dark-mostly-black-blue);
+    border-radius: 1vw 1vw 0 0;
+    opacity: .4;
+    top: 0;
+    left: 0;
+}
+
+.container .box .drop{
+    transition: transform 1.3s;
+    transform: rotateX(360deg) ;
+} 
+
+.container .box .text {
+    color: var(--grayish-blue);
+    margin: 2vh 0;
+    font-size: 1.2vw;
+    letter-spacing: .3vw;
+}
+
+.social {
+    position: absolute;
+    display: flex;
+    bottom: 10vh;
+}
+
+.social a img {
+    width: 2vw;
+}
+
+.social a:not(:last-child){
+    margin-right: 2vw;
+}
+
+.attribution {
+    color: var(--grayish-blue);
+    font-size: 1vw;
+    position: absolute;
+    bottom: 4vh;
+}
+
+.attribution a {
+    color: var(--soft-red);
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 775px) {
+    @keyframes move{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-1vh);
+        }
+        100%{
+            transform: translateY(0);
+        }    
+    }
+
+    h1 {
+        font-size: 1.8em;
+        padding: 0 1em;
+        letter-spacing: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container .box .timer {
+        font-size: 8vw;
+        padding: 10vw;
+        height: 10vw;
+    }
+
+    .container .box .text {
+        font-size: .8em;
+    }
+    
+    .social a img {
+        width: 2em;
+    }
+    
+    .social a:not(:last-child){
+        margin-right: 10vw;
+    }
+    
+    .attribution {
+        font-size: 3vw;
+    }
+    
+    .attribution a {
+        font-size: 3vw;
+    }
+}

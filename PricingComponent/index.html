@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Component</title>
+
+    <link rel="shortcut icon" href="public/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="container">
+        <header>
+            <h1>Simple, traffic-based pricing</h1>
+
+            <div>
+                Sing-up for our 30-day trial.
+                No credit card required.
+            </div> 
+        </header>
+
+        <div class="main">
+            <div class="main-header">
+                <div id="pageviews">
+                    <span id="views">100k</span> 
+                    pageviews
+                </div>
+                <div class="price">
+                    <span class="price-value">$16.00</span> / <span class="time">month</span>
+                </div>
+            </div>
+
+            <div class="main-body">
+                <input name="price-slider" id="price-slider" type="range" min="-2" max="2" step="1" value="0" aria-valuemin="-2" aria-valuemax="2" aria-valuenow="-2" aria-label="price range slider" style="background: linear-gradient(to right, rgb(165, 243, 235) 0%, rgb(165, 243, 235) 50%, rgb(234, 238, 251) 50%, rgb(234, 238, 251) 100%);">
+            
+                <div class="price">
+                    <span class="price-value">$16.00</span> / <span class="time">month</span>
+                </div>
+            </div>
+
+            <div class="main-footer">
+                <span>Monthly Billing</span> 
+                
+                <label class="switch">
+                    <input type="checkbox" name="on" id="on">
+                    <div class="slider"></div>
+                </label>
+
+                <span>Yearly Billing</span> 
+                <div class="sale">-25% <span class="discount">discount</span></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="left">
+                <div> <img src="public/images/icon-check.svg"> Unlimited websites</div>
+                <div> <img src="public/images/icon-check.svg"> 100% data ownership</div>
+                <div> <img src="public/images/icon-check.svg"> Email reports</div>
+            </div>
+            
+            <div class="right">
+                <a href="#">
+                    <div class="button">
+                        Start my trial
+                    </div>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="public/scripts/script.js"></script>
+</body>
+</html>

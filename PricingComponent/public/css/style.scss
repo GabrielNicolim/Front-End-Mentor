@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+
+$primary: hsl(227, 35%, 25%);
+$secondary: hsl(225, 20%, 60%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background: hsla(228, 100%, 99%, 0.144);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 3em 0 1em 0;
+
+    .bg {
+        background: hsla(224, 85%, 95%, 0.438);//hsla(227, 35%, 25%, 0.021);
+        width: 100vw;
+        height: 50%;
+        position: absolute;
+        top: 0;
+    }   
+
+    .container {
+        z-index: 999;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 3em;
+        background-image: url('../images/pattern-circles.svg');
+        background-position: center top;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        h1 {
+            color: $primary;
+            font-weight: bold;
+            font-size: 1.3em;
+            padding-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        div {
+            font-size: .9em;
+            color: $secondary;
+            width: 190px;
+            margin: 0 auto;
+        }
+    }
+
+    .main {
+        background: white;
+        margin-bottom: 5px;
+        border-radius: .8em;
+        text-align: center;
+        padding: 1em;
+        box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+      
+        .price {
+            color: $secondary;
+
+            .price-value {
+                color: $primary;
+                font-weight: bold;
+                font-size: 2em;
+                margin-right: 8px;
+            }
+        }
+
+        .main-header {
+
+            #pageviews {
+                color: $secondary;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: .8em;
+            }
+
+            .price {
+                display: none;
+            }
+        }
+
+        .main-body {
+            width: 320px;
+            margin-bottom: 2em;
+
+            #price-slider {
+                width: 80%;
+                margin: 4em 0 3em 0;
+                appearance: none;
+                height: 12px;
+                border-radius: 9px;
+                cursor: pointer;
+                outline-width: initial;
+                background: linear-gradient(to right, rgb(165, 243, 235) 0%, rgb(165, 243, 235) 0%, rgb(234, 238, 251) 0%, rgb(234, 238, 251) 100%);
+                 
+                 &::-webkit-slider-thumb {
+                    appearance: none;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    box-shadow: 2px 2px 9px 0 #999;
+                    background: #4acec1 url('../images/icon-slider.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                } 
+            }
+        }
+
+        .main-footer {
+            display: flex;
+            justify-content: space-between;
+
+            font-size: .7em;
+            font-weight: bold;
+            width: 280px;
+            margin: 0 auto;
+            color: $secondary;
+
+            .switch {
+                position: relative;
+                float: left;
+                width: 50px;
+
+                input[type=checkbox] {
+                    visibility: hidden;
+
+                    &:checked + .slider{
+                        background: $primary;
+
+                        &::after {
+                            transform: translateX(20px);
+                        }
+                    }
+                }
+
+                .slider {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 46px;
+                    height: 24px;
+                    background: hsl(223, 50%, 87%);
+                    border-radius: 14px;
+                    transition: 0.2s;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: hsl(173, 41%, 61%) 0%;
+                    }
+
+                    &::after {
+                        content: '';
+                        height: 18px;
+                        width: 18px;
+                        border-radius: 50%;
+                        position: absolute;
+                        bottom: 3px;
+                        left: 4px;
+                        background: #fff;
+                        box-shadow: 2px 2px 9px 0 #999;
+                        transition: 0.2s;
+                    }
+                }
+
+            }
+
+            .sale {
+                background: hsl(14, 92%, 95%);
+                color: hsl(15, 100%, 70%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1px 5px;
+                border-radius: 2em;
+
+                .discount {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        border-radius: .8em;
+        text-align: center;
+        background: white;
+        padding: 2em 1em;
+        box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+
+        .left {
+            margin: 1em 0;
+
+            div {
+                color: $secondary;
+
+                img {
+                    width: 15px;
+                    margin-right: 10px;
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .right {
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                text-decoration: none;
+                width: 100%;
+                display: block;
+
+                .button {
+                    color: hsl(226, 100%, 87%);
+                    background: $primary;
+                    width: 60%;
+                    padding: .8em 0;
+                    border-radius: 3em;
+                    font-weight: bold;
+                    font-size: .9em;
+                    border: 2px solid $primary;
+                    margin: 0 auto;
+    
+                    &:hover {
+                        cursor: pointer;
+                        transition: .4s;
+                        background: lighten($color: $primary, $amount: 1);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px)  {
+    body {
+        header {
+            h1 {
+                font-size: 2em;
+            }
+    
+            div {
+                font-size: 1.2em;
+                width: 600px;
+                padding-bottom: 1em;
+            }
+        }
+
+        .main {
+            padding: 2em;
+
+            .main-header {
+                display: flex;
+                justify-content: space-between;
+
+                #pageviews {
+                    font-size: 1em;
+                }
+
+                .price {
+                    display: unset;
+                }
+            }
+    
+            .main-body {
+                width: 600px;
+    
+                #price-slider {
+                    width: 95%;
+                }
+    
+                .price {
+                    display: none;
+                }
+            }
+    
+            .main-footer {
+                width: 360px;
+    
+                .sale {
+                    .discount {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
+        footer {
+            padding: 1em 2em;
+            display: flex;
+            justify-content: space-between;
+            
+            .left {
+                text-align: left;
+            }
+    
+            .right {
+                margin-top: 0;
+                width: 350px;
+
+                a {
+                    .button {
+                        margin: 0 0 0 auto;
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

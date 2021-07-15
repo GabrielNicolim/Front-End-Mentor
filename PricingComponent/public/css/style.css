@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background: rgba(250, 251, 255, 0.144);
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em 0 1em 0;
+}
+
+body .bg {
+  background: rgba(231, 237, 253, 0.438);
+  width: 100vw;
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+
+body .container {
+  z-index: 999;
+}
+
+body header {
+  text-align: center;
+  margin-bottom: 3em;
+  background-image: url("../images/pattern-circles.svg");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body header h1 {
+  color: #293356;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+body header div {
+  font-size: .9em;
+  color: #858fad;
+  width: 190px;
+  margin: 0 auto;
+}
+
+body .main {
+  background: white;
+  margin-bottom: 5px;
+  border-radius: .8em;
+  text-align: center;
+  padding: 1em;
+  -webkit-box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+          box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+}
+
+body .main .price {
+  color: #858fad;
+}
+
+body .main .price .price-value {
+  color: #293356;
+  font-weight: bold;
+  font-size: 2em;
+  margin-right: 8px;
+}
+
+body .main .main-header #pageviews {
+  color: #858fad;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8em;
+}
+
+body .main .main-header .price {
+  display: none;
+}
+
+body .main .main-body {
+  width: 320px;
+  margin-bottom: 2em;
+}
+
+body .main .main-body #price-slider {
+  width: 80%;
+  margin: 4em 0 3em 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  outline-width: initial;
+  background: -webkit-gradient(linear, left top, right top, from(#a5f3eb), color-stop(0%, #a5f3eb), color-stop(0%, #eaeefb), to(#eaeefb));
+  background: linear-gradient(to right, #a5f3eb 0%, #a5f3eb 0%, #eaeefb 0%, #eaeefb 100%);
+}
+
+body .main .main-body #price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 9px 0 #999;
+          box-shadow: 2px 2px 9px 0 #999;
+  background: #4acec1 url("../images/icon-slider.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body .main .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: .7em;
+  font-weight: bold;
+  width: 280px;
+  margin: 0 auto;
+  color: #858fad;
+}
+
+body .main .main-footer .switch {
+  position: relative;
+  float: left;
+  width: 50px;
+}
+
+body .main .main-footer .switch input[type=checkbox] {
+  visibility: hidden;
+}
+
+body .main .main-footer .switch input[type=checkbox]:checked + .slider {
+  background: #293356;
+}
+
+body .main .main-footer .switch input[type=checkbox]:checked + .slider::after {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+body .main .main-footer .switch .slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 46px;
+  height: 24px;
+  background: #cdd7ee;
+  border-radius: 14px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .main .main-footer .switch .slider:hover {
+  cursor: pointer;
+  background: #73c4bb 0%;
+}
+
+body .main .main-footer .switch .slider::after {
+  content: '';
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3px;
+  left: 4px;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 9px 0 #999;
+          box-shadow: 2px 2px 9px 0 #999;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .main .main-footer .sale {
+  background: #feece7;
+  color: #ff8c66;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1px 5px;
+  border-radius: 2em;
+}
+
+body .main .main-footer .sale .discount {
+  display: none;
+}
+
+body footer {
+  border-radius: .8em;
+  text-align: center;
+  background: white;
+  padding: 2em 1em;
+  -webkit-box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+          box-shadow: 0px 0px 80px 20px rgba(153, 153, 153, 0.062);
+}
+
+body footer .left {
+  margin: 1em 0;
+}
+
+body footer .left div {
+  color: #858fad;
+}
+
+body footer .left div img {
+  width: 15px;
+  margin-right: 10px;
+}
+
+body footer .left div:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+body footer .right {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .right a {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+}
+
+body footer .right a .button {
+  color: #bdccff;
+  background: #293356;
+  width: 60%;
+  padding: .8em 0;
+  border-radius: 3em;
+  font-weight: bold;
+  font-size: .9em;
+  border: 2px solid #293356;
+  margin: 0 auto;
+}
+
+body footer .right a .button:hover {
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background: #2b355a;
+  color: white;
+}
+
+@media screen and (min-width: 426px) {
+  body header h1 {
+    font-size: 2em;
+  }
+  body header div {
+    font-size: 1.2em;
+    width: 600px;
+    padding-bottom: 1em;
+  }
+  body .main {
+    padding: 2em;
+  }
+  body .main .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .main .main-header #pageviews {
+    font-size: 1em;
+  }
+  body .main .main-header .price {
+    display: unset;
+  }
+  body .main .main-body {
+    width: 600px;
+  }
+  body .main .main-body #price-slider {
+    width: 95%;
+  }
+  body .main .main-body .price {
+    display: none;
+  }
+  body .main .main-footer {
+    width: 360px;
+  }
+  body .main .main-footer .sale .discount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body footer {
+    padding: 1em 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .left {
+    text-align: left;
+  }
+  body footer .right {
+    margin-top: 0;
+    width: 350px;
+  }
+  body footer .right a .button {
+    margin: 0 0 0 auto;
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
