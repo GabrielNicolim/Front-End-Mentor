@@ -2,11 +2,11 @@
 
 ## About
 
-My solution to the challenge taken from the [FrontEnd Mentor] website (https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). The designs on this page can be found in the design folder.
+My solution to the challenge taken from the [FrontEnd Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1) website. The designs on this page can be found in the design folder.
 
 ## View
 
-To view the project open the `index.html` file in your browser or click on this [link](https://gabrielnicolim.github.io/SignUpForm/)
+To view the project open the `index.html` file in your browser or click on this [link](https://gabrielnicolim.github.io/Front-End-Mentor/SignUpForm/)
 
 <br>
 
