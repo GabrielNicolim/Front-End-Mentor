@@ -2,7 +2,7 @@
 
 ## About
 
-This project was taken from a challenge on the [FrontEnd Mentor] website (https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-).
+This project was taken from a challenge on the [FrontEnd Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-) website .
 
 ## View
 
