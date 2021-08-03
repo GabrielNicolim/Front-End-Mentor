@@ -13,5 +13,6 @@ My Solutions to Front End Mentor Site Challenges. This repository contains only 
 | [Responsive Columns](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/ResponsiveColumns) |
 | [Sign Up Form](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/SignUpForm) |
 | [Sunnyside](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/Sunnyside) |
+| [Tip Calculator](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/TipCalculator) |
 
 **These Challenges are builded with HTML, CSS (or) SCSS, JAVASCRIPT. No frontend frameworks used!**
