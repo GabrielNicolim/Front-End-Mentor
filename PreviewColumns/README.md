@@ -6,6 +6,6 @@ This project was taken from a challenge on the [FrontEnd Mentor](https://www.fro
 
 ## View
 
-To view the project open the `index.html` file in your browser or [click on this link](https://gabrielnicolim.github.io/Front-End-Mentor/ResponsiveColumns/)
+To view the project open the `index.html` file in your browser or [click on this link](https://gabrielnicolim.github.io/Front-End-Mentor/PreviewColumns/)
 
 <img src="https://user-images.githubusercontent.com/69210720/116816905-522bff00-ab3a-11eb-8a3c-3bd864c21ef8.png">
