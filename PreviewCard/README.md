@@ -6,4 +6,4 @@ My solution to the [Stats preview card component](https://www.frontendmentor.io/
 
 ## View
 
-To view the project open the `index.html` file in your browser or click on this [link](https://gabrielnicolim.github.io/Front-End-Mentor/ResponsiveCard/)
+To view the project open the `index.html` file in your browser or click on this [link](https://gabrielnicolim.github.io/Front-End-Mentor/PreviewCard/)
