@@ -19,29 +19,53 @@
   <div class="container">
     <div class="left">
       <span>Bill</span>
-      <input type="number" name="number" id="number">
+      <div class="input-box">
+        <input type="number" name="number" id="number" min="0" max="1000000" value="0">
+        <label class="icon" for="number">
+          <img src="public/images/icon-dollar.svg" alt="Dollar icon">
+        </label>
+      </div>
 
       <span>Select Tip %</span>
       <div class="grid">
         <div class="btn">5%</div>
         <div class="btn">10%</div>
-        <div class="btn">15%</div>
+        <div class="btn activated">15%</div>
         <div class="btn">25%</div>
         <div class="btn">50%</div>
-        <div class="btn custom">Custom</div>
+        <input type="button" id="custom" class="btn" value="Custom">
       </div>
 
       <span>Number of People</span>
-      <input type="number" name="people" id="people">
+      <div class="input-box">
+        <input type="number" name="people" id="people" min="0" max="10000" value="0">
+        <label class="icon" for="people">
+          <img src="public/images/icon-person.svg" alt="Person icon">
+        </label>
+      </div>
     </div>
 
     <div class="right">
       <div class="label">
-        <div>Tip Amount / person</div>
+        <div class="info">
+          <div>Tip Amount</div>
+          <div>/ person</div>
+        </div>
+        
+        <div class="result">
+          $0.00
+        </div>
       </div>
 
       <div class="label">
-        <div>Total / person</div>
+        <div class="info">
+          <div>Total</div>
+          <div>/ person</div>
+        </div>
+
+        <div class="result">
+          $0.00
+        </div>
       </div>
 
       <div class="btn">
