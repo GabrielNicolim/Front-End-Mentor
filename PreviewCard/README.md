@@ -1,4 +1,4 @@
-# ResponsiveCard
+# PreviewCard
 
 ## About
 
