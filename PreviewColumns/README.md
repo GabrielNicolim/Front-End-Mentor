@@ -1,4 +1,4 @@
-# ResponsiveColumns
+# PreviewColumns
 
 ## About
 
