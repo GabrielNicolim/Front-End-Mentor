@@ -13,11 +13,19 @@
     --white: hsl(0, 0%, 100%);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -205,4 +213,65 @@ input[type=number] {
     background: var(--light-grayish-cyan);
     color: var(--very-dark-cyan);
     cursor: pointer;
+}
+
+.attribution {
+    margin: 4em 0;
+    text-align: center;
+    padding: 0 .5em;
+}
+
+.attribution a {
+    color: var(--very-dark-cyan);
+}
+
+.attribution a:hover {
+    color: var(--strong-cyan);
+    transition: 200ms;
+}
+
+@media only screen and (max-width: 1100px) {        
+    .container {
+        flex-direction: column;
+        padding: 1em;
+        width: 100vw;
+    }
+    
+    .left,
+    .right {
+        width: 100%; 
+        padding: 0;
+        margin-bottom: 2em;
+    }
+    
+    .left .grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    
+    .left .grid .btn {
+        width: 100%;
+    }
+    
+    .left .grid .btn#custom {
+        font-size: 20px;
+    }
+    
+    .right {
+        padding: 2em 1em;
+    }
+
+    .right .label {
+        margin-bottom: 2em;
+    }
+    
+    .right .label .result {
+        font-size: 24px;
+    }
+
+    .right .btn {
+        position: static;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
