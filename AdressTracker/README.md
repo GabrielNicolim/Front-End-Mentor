@@ -23,8 +23,6 @@ Users should be able to:
 - See their own IP address on the map on the initial page load
 - Search for any IP addresses or domains and see the key information and location
 
-![View](public/design/desktop-preview.jpg)
-
 ### Links
 
 - Solution URL: [AdressTracker](https://gabrielnicolim.github.io/Front-End-Mentor/AdressTracker/)
