@@ -8,6 +8,7 @@ My Solutions to Front End Mentor Site Challenges. This repository contains only 
 |--------------|
 | [Adress Tracker](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/AdressTracker) |
 | [Launch Countdown Timer](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/LaunchCountdownTimer) |
+| [Order Summary](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/OrderSummary) |
 | [Preview Card](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PreviewCard) |
 | [Preview Columns](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PreviewColumns) |
 | [Pricing Component](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PricingComponent) |
