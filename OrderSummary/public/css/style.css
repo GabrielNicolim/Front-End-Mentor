@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat, repeat;
+    background-size: contain;
+}
+
+.container {
+    border-radius: 1em;
+    background: var(--very-pale-blue);
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    border-radius: 1em 1em 0 0;
+    width: 350px;
+}
+
+h2 {
+    margin-top: 1em;
+    text-align: center;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.content {
+    text-align: center;
+    color: var(--desaturated-blue);
+    width: 270px;
+    margin: 1em auto;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.choice {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choice span {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--dark-blue);
+}
+
+.choice span:last-child {
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+.choice a {
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--dark-blue);
+}
+
+.choice a:hover {
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    transition: 200ms;
+}
+
+.btn {
+    font-weight: 900;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+    padding: 15px 0;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    color: var(--dark-blue);
+    transition: 200ms;
+}
+
+.btn.main {
+    margin-top: 2em;
+    background: var(--bright-blue);
+    color: var(--pale-blue);
+}
+
+.btn.main:hover {
+    background: var(--desaturated-blue);
+    transition: 200ms;
+}
+
+.attribution {
+    margin-top: 2em;
+    font-size: 12px;
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 0 2em;
+}
+
+.attribution a {
+    color: var(--dark-blue);
+}
+
+.attribution a:hover {
+    color: var(--desaturated-blue);
+    transition: 200ms;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+
+    .hero img {
+        width: 300px;
+    }
+}
