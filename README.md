@@ -12,6 +12,7 @@ My Solutions to Front End Mentor Site Challenges. This repository contains only 
 | [Preview Card](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PreviewCard) |
 | [Preview Columns](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PreviewColumns) |
 | [Pricing Component](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/PricingComponent) |
+| [Qr Code Component](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/QrCodeComponent) |
 | [Sign Up Form](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/SignUpForm) |
 | [Sunnyside](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/Sunnyside) |
 | [Tip Calculator](https://github.com/GabrielNicolim/Front-End-Mentor/tree/main/TipCalculator) |
