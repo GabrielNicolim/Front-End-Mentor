@@ -1,16 +1,5 @@
-To start the project you need run the folowing commands at your terminal:
+# Frontend Mentor - Qr Code Component
 
-```
-    // This command will install all packages you need to start the project
+This is a solution to the [Qr Code Component challenge on Frontend Mentor](https://gabrielnicolim.github.io/Front-End-Mentor/QrCodeComponent/) 
 
-    npm install
-```
-
-
-And
-
-```
-    // This command will gerenate a output css with tailwind comands
-
-    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-```
+![image](https://user-images.githubusercontent.com/69210720/154576487-b4618816-aa06-4927-a768-f17d256293a4.png)
